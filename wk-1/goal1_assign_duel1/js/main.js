@@ -32,7 +32,10 @@
     var round=0;                                                //this line declares and assigns the value of 0 to the global variable round
 
     function fight(){                                               // This is the fight function
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);   
+        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);   //This line alerts the value of the global variable playerOneName,
+                                                                                                    //as well as a semi colon, the value of the global variable playerOneHealth
+                                                                                                    //the words "*START*" , the value of the global variable playerTwoName, semicolon
+                                                                                                    // and the value of the global variable playerTwoHealth
 
 
 
