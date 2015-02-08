@@ -51,7 +51,7 @@
             var minDamage2 = player2Damage * .5;                    //This line declares and makes the value of the local variable minDamage2 equal to the value of the global variable player2Damage * .5
 
 
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);      
+            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);      //declares variable f1 - Math.floor is then used to convert this floating point
                                                                                            // number to an integer between 0 and - 1
                                                                                            // Math.random returns a floating-point number between 0 and 1
                                                                                            //the result is then multiplied by the result of player1Damage subtracted from
@@ -75,7 +75,7 @@
             console.log(result);                                        //This line prints the value of the variable result to the console
             if (result==="no winner")                                   //This is an if else statement that checks to see if the result of the game is no winner
 
-            {                                                               //curly brace
+            {                                                              
                 round++;                                                        //This  line increments the round variable
                 alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);     //This line alerts the value of playerOneName, semicolon,
                                                                                                                                 // as well as the value of playerOneHealth, the word and symbol "*ROUND"
