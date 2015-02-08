@@ -29,7 +29,11 @@
     var playerTwoHealth = 100;                                      //this line declares and assigns the value of 100 to the playerTwoHealth global variable
 
     //initiate round                                         //Comment Line
+<<<<<<< HEAD
     var round=0;                                                //this line declares and assigns the value of 0 to the global variable round
+=======
+    var round=0;                                                //this line assigns the value of 0 to the round variable
+>>>>>>> FETCH_HEAD
 
     function fight(){                                               // This is the fight function
         alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);   //this line alerts the name assigned to global variable playerOneName
@@ -91,6 +95,7 @@
 
     function winnerCheck(){                                         //This is the function winnerCheck
         var result="no winner";                                     //This line assigns the value of "no winner" to the local variable result
+<<<<<<< HEAD
         if (playerOneHealth<1 && playerTwoHealth<1)                 //nested if else statement that checks to see if the value of playerOneHealth
                                                                     // and playerTwoHealth are less than 1
         {                                                           //curly brace
@@ -106,6 +111,19 @@
         };                                                          //curly brace and semicolon
         return result;                                              // returns the value of the local variable result
     };                                                               //curly brace and semicolon
+=======
+        if (playerOneHealth<1 && playerTwoHealth<1)
+        {
+            result = "You Both Die";
+        } else if(playerOneHealth<1){
+            result =playerTwoName+" WINS!!!"
+        } else if (playerTwoHealth<1)
+        {
+            result = playerOneName+" WINS!!!"
+        };
+        return result;
+    };
+>>>>>>> FETCH_HEAD
 
     /*******  The program gets started below *******/                                    //Comment Line
     fight();                                    // Calls the fight function
