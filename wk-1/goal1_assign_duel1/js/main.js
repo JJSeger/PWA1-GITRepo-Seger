@@ -29,7 +29,7 @@
     var playerTwoHealth = 100;                                      //this line assigns the value of 100 to the playerTwoHealth variable
 
     //initiate round                                         //Comment Line
-    var round=0;                                                //this line assigns the value od0 to the round variable
+    var round=0;                                                //this line assigns the value of 0 to the round variable
 
     function fight(){                                               // This is the fight function
         alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);   //this line alerts the name assigned to playerOneName
@@ -59,33 +59,38 @@
             var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);       //Math.floor is then used to convert this floating point
                                                                                             // number to an integer between 0 and - 1
                                                                                             // Math.random returns a floating-point number between 0 and 1
-                                                                                            //the result is then multiplied by the result of player1Damage subtracted from
-                                                                                            //minDamage1 then added to minDamage1
+                                                                                            //the result is then multiplied by the result of player2Damage subtracted from
+                                                                                            //minDamage2 then added to minDamage2
 
               //inflict damage                                       //Comment Line
             playerOneHealth-=f1;       //Ths line subtracts the value of playerOneHealth from f1 and assigns the value to playerOneHealth
             playerTwoHealth-=f2;        //Ths line subtracts the value of playerTwoHealth from f2 and assigns the value to playerTwoHealth
 
-            console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);  //This line prints to the console the value of playerOneName
+            console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);  //This line prints to the console the value of playerOneName ":" playerOneHealth
+                                                                                                            //then the value of playerTwoName semicolon and the value of playerTwoHealth
 
             //check for victor                                                           //Comment Line
-            var result = winnerCheck();
-            console.log(result);
-            if (result==="no winner")
-            {
-                round++;
-                alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);
+            var result = winnerCheck();                                 //This line assigns the value of the function winnerCheck to the variable result
+            console.log(result);                                        //This line prints the value of the variable result to the console
+            if (result==="no winner")                                   //This is an if else statement that checks to see if the result of the game is no winner
 
-            } else{
-                alert(result);
-                break;
+            {                                                               //curly brace
+                round++;                                                        //This  line increments the round variable
+                alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);     //This line alerts the value of playerOneName, semicolon,
+                                                                                                                                // as well as the value of playerOneHealth, the word and symbol "*ROUND"
+                                                                                                                                // and the value of the round variable, the word "OVER", the symbol
+                                                                                                                                // "*"  the value of playerTwoName, semicolon, and the value of playerTwoHealth
+
+            } else{                                                  //this is the else part of the if else statement
+                alert(result);                                     //this line alerts the value of the variable result
+                break;                                             // this line stops the if else statement
             };
 
         };
     };
 
-    function winnerCheck(){
-        var result="no winner";
+    function winnerCheck(){                                         //This is the function winnerCheck
+        var result="no winner";                                     //This line assigns the value of "no winner" to the local variable result
         if (playerOneHealth<1 && playerTwoHealth<1)
         {
             result = "You Both Die";
