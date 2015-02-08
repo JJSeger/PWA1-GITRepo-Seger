@@ -42,7 +42,7 @@
 
 
 
-        for (var i = 0; i < 10; i++)                                // This is a for loop that controls the ten rounds-
+        for (var i = 0; i < 10; i++)                          
             // the local variable "i" is assigned a value of 0
             //and incremented until the value is greater than 10
         {
