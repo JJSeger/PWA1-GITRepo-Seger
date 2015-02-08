@@ -111,5 +111,5 @@
     /*******  The program gets started below *******/                                    //Comment Line
     fight();                                    // Calls the fight function
 
-})();                                               
+})();                                               //Ends code
 
