@@ -42,7 +42,7 @@
 
 
 
-        for (var i = 0; i < 10; i++)                          
+        for (var i = 0; i < 10; i++)                                // This is a for loop that controls the ten rounds-
             // the local variable "i" is assigned a value of 0
             //and incremented until the value is greater than 10
         {
@@ -51,7 +51,7 @@
             var minDamage2 = player2Damage * .5;                    //This line declares and makes the value of the local variable minDamage2 equal to the value of the global variable player2Damage * .5
 
 
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);      //declares variable f1 - Math.floor is then used to convert this floating point
+            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);      
                                                                                            // number to an integer between 0 and - 1
                                                                                            // Math.random returns a floating-point number between 0 and 1
                                                                                            //the result is then multiplied by the result of player1Damage subtracted from
