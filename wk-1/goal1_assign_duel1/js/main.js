@@ -14,7 +14,7 @@
 // self-executing function                          //Comment Line
 (function(){                                            //This line names the function
 
-    console.log("FIGHT!!!");                            
+    console.log("FIGHT!!!");                            //This line displays fight on the browser console
 
     //player name
     var playerOneName = "Spiderman";                        //this line declares and assigns the value of Spiderman to the playerOneName global variable
