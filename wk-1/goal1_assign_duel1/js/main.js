@@ -75,7 +75,7 @@
             console.log(result);                                        //This line prints the value of the variable result to the console
             if (result==="no winner")                                   //This is an if else statement that checks to see if the result of the game is no winner
 
-            {                                                              
+            {                                                               //curly brace
                 round++;                                                        //This  line increments the round variable
                 alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);     //This line alerts the value of playerOneName, semicolon,
                                                                                                                                 // as well as the value of playerOneHealth, the word and symbol "*ROUND"
@@ -111,5 +111,5 @@
     /*******  The program gets started below *******/                                    //Comment Line
     fight();                                    // Calls the fight function
 
-})();                                               //Ends code
+})();                                               
 
