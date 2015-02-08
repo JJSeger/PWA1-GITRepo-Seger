@@ -42,10 +42,10 @@
 
 
         for (var i = 0; i < 10; i++)                                // This is a for loop that controls the ten rounds-
-                                                                    // the local variable "i" is assigned a value of 0
-                                                                    //and incremented until the value is greater than 10
+            // the local variable "i" is assigned a value of 0
+            //and incremented until the value is greater than 10
         {
-           //random formula is - Math.floor(Math.random() * (max - min) + min);                //Comment Line
+            //random formula is - Math.floor(Math.random() * (max - min) + min);                //Comment Line
             var minDamage1 = player1Damage * .5;                    //This line declares and makes the value of the local variable minDamage1 equal to the value of the global variable player1Damage * .5
             var minDamage2 = player2Damage * .5;                    //This line declares and makes the value of the local variable minDamage2 equal to the value of the global variable player2Damage * .5
 
@@ -54,7 +54,7 @@
                                                                                            // number to an integer between 0 and - 1
                                                                                            // Math.random returns a floating-point number between 0 and 1
                                                                                            //the result is then multiplied by the result of player1Damage subtracted from
-                                                                                            //minDamage1 then added to minDamage1
+            //minDamage1 then added to minDamage1
 
             var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);       //declares variable f2 -Math.floor is then used to convert this floating point
                                                                                             // number to an integer between 0 and - 1
@@ -62,12 +62,12 @@
                                                                                             //the result is then multiplied by the result of player2Damage subtracted from
                                                                                             //minDamage2 then added to minDamage2
 
-              //inflict damage                                       //Comment Line
+            //inflict damage                                       //Comment Line
             playerOneHealth-=f1;       //Ths line subtracts the value of playerOneHealth from f1 and assigns the value to playerOneHealth
             playerTwoHealth-=f2;        //Ths line subtracts the value of playerTwoHealth from f2 and assigns the value to playerTwoHealth
 
             console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);  //This line prints to the console the value of playerOneName ":" playerOneHealth
-                                                                                                            //then the value of playerTwoName semicolon and the value of playerTwoHealth
+            //then the value of playerTwoName semicolon and the value of playerTwoHealth
 
             //check for victor                                                           //Comment Line
             var result = winnerCheck();                                 //This line assigns the value of the function winnerCheck to the variable result
@@ -92,14 +92,14 @@
     function winnerCheck(){                                         //This is the function winnerCheck
         var result="no winner";                                     //This line assigns the value of "no winner" to the local variable result
         if (playerOneHealth<1 && playerTwoHealth<1)                 //nested if else statement that checks to see if the value of playerOneHealth
-                                                                    // and playerTwoHealth are less than 1
+        // and playerTwoHealth are less than 1
         {                                                           //curly brace
             result = "You Both Die";                                // gives the value of "You both Die" to the variable result if the prior check comes back true
         }
-            else if(playerOneHealth<1){                             //second part of the nested if else statement that checks to see if the value of playerOneHealth is less than 1
+        else if(playerOneHealth<1){                             //second part of the nested if else statement that checks to see if the value of playerOneHealth is less than 1
             result =playerTwoName+" WINS!!!"                        // assigns the value of playerTwoName and the word "WINS" to the variable result if the prior check comes back true
         }
-                else if (playerTwoHealth<1)                         //third part of the nested if else statement that checks to see if the value of playerTwoHealth is less than 1
+        else if (playerTwoHealth<1)                         //third part of the nested if else statement that checks to see if the value of playerTwoHealth is less than 1
 
         {                                                           // curly brace
             result = playerOneName+" WINS!!!"                       //assigns the value of playerOneName and the word "WINS" to the local variable result if the prior check comes back true
