@@ -13,31 +13,32 @@
 
 
 // Create privatized scope using a self-executing function
-(function(){                                                                                      //Search engine main Function
+(function(){                                                                                           //Search engine main Function
 	
-	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)                                //comment for the code below
-	var resultsDIV = document.getElementById("results"),                                          //variable declaration for resultDIV giving the value of the method
-                                                                                                  // getElementById and storing it in "results"
-		searchInput = document.forms[0].search,                                                   //document.forms[0].search is the method used for searching
-                                                                                                  //the array and putting the result into the variable searchInput
-		currentSearch = ''                                                                        //undeclared variable
+	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)                                     //comment for the code below
+	var resultsDIV = document.getElementById("results"),                                               //variable declaration for resultDIV giving the value of the method
+                                                                                                       // getElementById and storing it in "results"
+		searchInput = document.forms[0].search,                                                        //document.forms[0].search is the method used for searching
+                                                                                                       //the array and putting the result into the variable searchInput
+		currentSearch = ''                                                                             //undeclared variable
 	;
 	
-	// Validates search query                                                                      //comment line for
-	var validqte == function(query){                                                                //declaring the misspelled variable validqte to equal the value
-                                                                                                    //the function with the parameter of query
+	// Validates search query                                                                           //comment line for
+	var validqte == function(query){                                                                    //declaring the misspelled variable validqte to equal the value
+                                                                                                        //the function with the parameter of query
 
-    		// Trim whitespace from start and end of search query                                      //comment line for
+    		// Trim whitespace from start and end of search query                                       //comment line for
 		while(query.charAt(0) = " "){                                                                   //while statement that does not let the query return anything if there are no characters
-			query = query.substring(1, query.length);
-		};
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
-		;
+			query = query.substring(1, query.length);                                                   //this is assigning the value of query.substring wth the parameters 1,and the query.length function to query
+		};                                                                                              //end of first while statement
+		while(query.charAt(query.length-1) === ""){                                                     //nested while statement that sets the query characters at the value of query.length -1
+			query = query.substring(0, query.length-1);                                                 //this line sets the value of query to equal the query.substring method with the parameters 0, the value of
+                                                                                                        //the query.length method -1
+		;                                                                                               //unnecessary semicolon
 		
-		// Check search length, must have 3 characters                                              //comment line for
-		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+		// Check search length, must have 3 characters                                                  //comment line for
+		if(query.length < 3){                                                                           //if statement with the argument the the value of the method query.length must be less than 3
+			alert("Your search query is too small, try again.);                                        // 
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)                                                 //comment line for
 			searchInput.focus();
