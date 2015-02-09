@@ -24,7 +24,7 @@
 	;
 	
 	// Validates search query                                                                           //comment line for the query search validation
-	var validqte == function(query){                                                                    //declaring the misspelled variable validqte to equal the value
+	var validqte == function(query){                                                                    //declaring the variable validqte to equal the value
                                                                                                         //the function with the parameter of query
 
     		// Trim whitespace from start and end of search query                                       //comment line
@@ -62,77 +62,77 @@
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"                     //comment line
 			// save a lowercase variable of the video title                                           //comment line
-			var dbTitleEnd = db[i].indexOf('|');                                                        //declaring the variable dbTitleEnd to equal db[i].indexOf('|');
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);                                      //declaring the variable dbitem to equal db[i].tolowercase().substring(0, dbTitleEnd);
+			var dbTitleEnd = db[i].indexOf('|');                                                        //declaring the variable dbTitleEnd to equal db[i].indexOf('|');  (database query)
+			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);                                      //declaring the variable dbitem to equal db[i].tolowercase().substring(0, dbTitleEnd);  (database query)
 			
 			// loop through the user's search query words                                             //comment line
 			// save a lowercase variable of the search keyword                                        //comment line
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();                                               //declaring the variable
+			for(var ii=0, jj=queryArray.length; ii<jj; ii++){                                           // this line states that the variable ii equals 0, variable jj = quearyArray.length and ii<jj and ii gets incremented
+				var qitem = queryArray[ii].tolowercase();                                               //declaring the variable qitem to equal queryArray[ii].tolowercase();
 				
 				// is the keyword anywhere in the video title?                                         //comment line
 				// If a match is found, push full db[i] into results array                             //comment line
-				var compare = dbitem.indexOf(qitem);                                                        //declaring the variable
-				if(compare !== -1){
-					results.push(db[i]);
-				};
-			;
-		;
+				var compare = dbitem.indexOf(qitem);                                                        //declaring the variable compare to equal the dbitem.indexOf(qitem);
+				if(compare !== -1){                                                                     // if statement that states that if compare does not equal -1
+					results.push(db[i]);                                                                //then the results.push function is called with parameters
+				};                                                                                      //curly brace and semicolon
+			;                                                                                               //semicolon
+		;                                                                                                   //semicolon
 		
-		results.sort();
+		results.sort();                                                                                 //calling the results.sort function
 		
 		// Check that matches were found, and run output functions                                      //comment line
-		if(results.length = 0){
-			noMatch();
-		}else{
-			showMatches(results);
-		};
-	};
+		if(results.length = 0){                                                                             //if else statement that says that if the result.length method equals 0
+			noMatch();                                                                                      //uninitialized variable with no value
+		}else{                                                                                                  // else part of the if else statement
+			showMatches(results);                                                                               //uninitialized variable with the value of the variable results
+		};                                                                                                  //curly brace and semicolon
+	};                                                                                                          //curly brace and semicolon
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)                     //comment line
 	var noMatch = function(){                                                                               //declaring the variable
-		var html = ''+                                                                                      //declaring the variable
-			'<p>No Results found.</p>'+
-			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
-		;
-		resultsDIV.innerHTML = html;
-	};
+		var html = ''+                                                                                      //declaring a redundant variable
+			'<p>No Results found.</p>'+                                                                         //html tags
+			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'                     //html tags
+		;                                                                                                   //semicolon
+		resultsDIV.innerHTML = html;                                                                                //this line sets the results of the method resultsDIV.innerHTML to equal the variable html
+	};                                                                                                          //curly brace and semicolon
 	
 	// Put matches into page as paragraphs with anchors                                                       //comment line
-	var showMatches = function(results){                                                                        //declaring the variable
+	var showMatches = function(results){                                                                        //declaring the variable showMatches to equal function(results)
 		
 		// THE NEXT 4 LINES ARE CORRECT.                                                                       //comment line
-		var html = '<p>Results</p>',                                                                           //declaring the variable
-			title, 
-			url
-		;
+		var html = '<p>Results</p>',                                                                           //declaring the variable html to equal HTML tags
+			title,                                                                                              //variable title
+			url                                                                                                 //variable url
+		;                                                                                                       //semicolon
 		
 		// loop through all the results search() function                                                      //comment line
-		for(var i=0, j=results.length; i<j; i++){
+		for(var i=0, j=results.length; i<j; i++){                                                               //for loop that give the argument var i=0, j=results.length; i<j; i++
 		
 			// title of video ends with pipe                                                                   //comment line
 			// pull the title's string using index numbers                                                     //comment line
-			titleEnd = results[i].indexOf('|');
-			title = results[i].subString(0, titleEnd);
+			titleEnd = results[i].indexOf('|');                                                                 // variable titleEnd equals the results array value i
+			title = results[i].subString(0, titleEnd);                                                              //this pulls the title of the video
 			
 			// pull the video url after the title                                                               //comment line
-			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
+			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);                               //this shows the length of the video
 			
 			// make the video link - THE NEXT LINE IS CORRECT.                                                  //comment line
-			html += '<p><a href=' + url + '>' + title + '</a></p>';
-		};
-		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.                                                    //comment line
-	};
+			html += '<p><a href=' + url + '>' + title + '</a></p>';                                                 //this shows the link to the video
+		};                                                                                                          //curly brace and semicolon
+		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.                                                       //this line shows the value from the variable html
+	};                                                                                                              //curly brace and semicolon
 	
 	// The onsubmit event will be reviewed in upcoming Course Material.                                          //comment line
 	// THE LINE DIRECTLY BELOW IS CORRECT                                                                        //comment line
-	document.forms[0].onsubmit = function(){
-		var query = searchInput.value;                                                                              //declaring the variable
-		validqte(query);
+	document.forms[0].onsubmit = function(){                                                                        //shows the document form in the array when the submit button is pushed
+		var query = searchInput.value;                                                                              //declaring the variable query to equal the value of the searchInput.value method
+		validqte(query);                                                                                            //giving the parameter query to the variable validqte
 
         // return false is needed for most events - this will be reviewed in upcoming course material             //comment line
         // THE LINE DIRECTLY BELOW IS CORRECT                                                                     //comment line
-		return false;
-	;
+		return false;                                                                                               //this line prevents default action
+	;                                                                                                               //semicolon
 
-})();
+})();                                                                                                                       //curly brace three parenthesis and semicolon - a lot of extra stuff here
