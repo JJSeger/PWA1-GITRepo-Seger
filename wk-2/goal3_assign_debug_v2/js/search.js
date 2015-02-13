@@ -1,3 +1,15 @@
+//Judd Seger
+//Week 2 search engine assignment
+//02-13-15
+
+
+
+
+
+
+
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
@@ -16,7 +28,7 @@
 		};
 		while(query.charAt(query.length-1) === "") {
             query = query.substring(0, query.length - 1);
-        ;
+        };                                                    //added closing curly brace
 		
 		// Check search length, must have 3 characters
 		if(query.length < 3){
@@ -31,7 +43,7 @@
 	};
 	
 	// Finds search matches
-	var search = function(query)
+	var search = function(query){                                         //added opening curly brace
 		
 		// split the user's search query string into an array
 		queryArray = query.join(" ");                                   //removed the var
@@ -87,7 +99,7 @@
         var html = '<p>Results</p>',
             title,
             url
-    ;
+    };                                                               //added closing curly brace
 		
 		// loop through all the results search() function
 		for(var i=0, j=results.length; i<j; i++){
@@ -104,7 +116,7 @@
 			html += '<p><a href=' + url + '>' + title + '</a></p>';
 		};
 		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
-	};
+	;                                                                           //removed closing curly brace!!!!!!!!
 	
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
@@ -115,6 +127,6 @@
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
         return false;
-    };                                              //added closing curly brace
+    ;
 
 })();
