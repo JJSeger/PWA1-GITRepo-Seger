@@ -14,10 +14,9 @@
 (function(){
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].search,
-		currentSearch = ''
-	;
+	var resultsDIV = document.getElementById("results");
+		searchInput = document.forms[0].search;
+		currentSearch = '';
 	
 	// Validates search query
 	var validqte = function(query){                                 //removed one of the =
@@ -25,7 +24,8 @@
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) === " "){                                     //replaced the = with ===
 			query = query.substring(1, query.length);
-		};
+		                                                                    //removed closing curly brace and semi colon
+
 		while(query.charAt(query.length-1) === "") {
             query = query.substring(0, query.length - 1);
         };                                                    //added closing curly brace
