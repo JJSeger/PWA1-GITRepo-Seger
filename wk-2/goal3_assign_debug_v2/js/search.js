@@ -8,7 +8,7 @@
 	;
 	
 	// Validates search query
-	var validqte == function(query){
+	var validqte = function(query){                                 //removed one of the equal signs
 		
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
