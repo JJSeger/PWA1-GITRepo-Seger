@@ -17,8 +17,8 @@
     console.log("FIGHT!!!");                            //This line displays fight on the browser console
 
     //player name
-    var playerOneName = "Spiderman";                        //this line declares and assigns the value of Spiderman to the playerOneName global variable
-    var playerTwoName = "Batman";                           //this line declares and assigns the value of Batman to the playerTwoName global variable
+    var playerOneName = [Spiderman];                        //this line declares and assigns the value of Spiderman to the playerOneName global variable
+    var playerTwoName = [Batman];                           //this line declares and assigns the value of Batman to the playerTwoName global variable
 
     //player damage
     var player1Damage = 20;                                    //this line declares and assigns the value of 20 to the player1Damage global variable
