@@ -75,8 +75,8 @@
             playerOneHealth-=f1;       //Ths line subtracts the value of playerOneHealth from f1 and assigns the value to playerOneHealth
             playerTwoHealth-=f2;        //Ths line subtracts the value of playerTwoHealth from f2 and assigns the value to playerTwoHealth
 
-            console.log(fighterOne+": "+playerOneHealth + " " + fighterTwo+":"+playerTwoHealth);  //This line prints to the console the value of playerOneName ":" playerOneHealth
-            //then the value of playerTwoName semicolon and the value of playerTwoHealth
+            console.log(fighterOne+": "+playerOneHealth + " " + fighterTwo+":"+playerTwoHealth);  //This line prints to the console the value of fighterOne ":" playerOneHealth
+                                                                                                   //then the value of fighterTwo semicolon and the value of playerTwoHealth
 
             //check for victor                                                           //Comment Line
             var result = winnerCheck();                                 //This line assigns the value of the function winnerCheck to the variable result
@@ -85,10 +85,10 @@
 
             {                                                               //curly brace
                 round++;                                                        //This  line increments the round variable
-                alert(fighterOne+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+fighterTwo+":"+playerTwoHealth);     //This line alerts the value of playerOneName, semicolon,
+                alert(fighterOne+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+fighterTwo+":"+playerTwoHealth);     //This line alerts the value of fighterOne, semicolon,
                                                                                                                                 // as well as the value of playerOneHealth, the word and symbol "*ROUND"
                                                                                                                                 // and the value of the round variable, the word "OVER", the symbol
-                                                                                                                                // "*"  the value of playerTwoName, semicolon, and the value of playerTwoHealth
+                                                                                                                                // "*"  the value of fighterTwo, semicolon, and the value of playerTwoHealth
 
             } else{                                                  //this is the else part of the if else statement
                 alert(result);                                     //this line alerts the value of the variable result
@@ -106,12 +106,12 @@
             result = "You Both Die";                                // gives the value of "You both Die" to the variable result if the prior check comes back true
         }
         else if(playerOneHealth<1){                             //second part of the nested if else statement that checks to see if the value of playerOneHealth is less than 1
-            result =playerTwoName+" WINS!!!"                        // assigns the value of playerTwoName and the word "WINS" to the variable result if the prior check comes back true
+            result =fighterOne+" WINS!!!"                        // assigns the value of fighterOne and the word "WINS" to the variable result if the prior check comes back true
         }
         else if (playerTwoHealth<1)                         //third part of the nested if else statement that checks to see if the value of playerTwoHealth is less than 1
 
         {                                                           // curly brace
-            result = playerOneName+" WINS!!!"                       //assigns the value of playerOneName and the word "WINS" to the local variable result if the prior check comes back true
+            result = fighterTwo+" WINS!!!"                       //assigns the value of fighterTwo and the word "WINS" to the local variable result if the prior check comes back true
         };                                                          //curly brace and semicolon
         return result;                                              // returns the value of the local variable result
     };                                                               //curly brace and semicolon
