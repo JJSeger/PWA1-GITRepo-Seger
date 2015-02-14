@@ -75,7 +75,7 @@
             playerOneHealth-=f1;       //Ths line subtracts the value of playerOneHealth from f1 and assigns the value to playerOneHealth
             playerTwoHealth-=f2;        //Ths line subtracts the value of playerTwoHealth from f2 and assigns the value to playerTwoHealth
 
-            console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);  //This line prints to the console the value of playerOneName ":" playerOneHealth
+            console.log(fighterOne+": "+playerOneHealth + " " + fighterTwo+":"+playerTwoHealth);  //This line prints to the console the value of playerOneName ":" playerOneHealth
             //then the value of playerTwoName semicolon and the value of playerTwoHealth
 
             //check for victor                                                           //Comment Line
@@ -85,7 +85,7 @@
 
             {                                                               //curly brace
                 round++;                                                        //This  line increments the round variable
-                alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);     //This line alerts the value of playerOneName, semicolon,
+                alert(fighterOne+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+fighterTwo+":"+playerTwoHealth);     //This line alerts the value of playerOneName, semicolon,
                                                                                                                                 // as well as the value of playerOneHealth, the word and symbol "*ROUND"
                                                                                                                                 // and the value of the round variable, the word "OVER", the symbol
                                                                                                                                 // "*"  the value of playerTwoName, semicolon, and the value of playerTwoHealth
