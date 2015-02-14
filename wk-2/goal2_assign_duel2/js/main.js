@@ -17,12 +17,12 @@
     console.log("FIGHT!!!");                            //This line displays fight on the browser console
 
     //player name
-    var playerOneName = [Spiderman];                        //this line declares and assigns the value of Spiderman to the playerOneName global variable
-    var playerTwoName = [Batman];                           //this line declares and assigns the value of Batman to the playerTwoName global variable
+    var playerOneName = ["Spiderman",20,100];                        //this line declares and assigns the value of Spiderman to the playerOneName global variable
+    var playerTwoName = ["Batman",20,100];                           //this line declares and assigns the value of Batman to the playerTwoName global variable
 
     //player damage
-    var player1Damage = 20;                                    //this line declares and assigns the value of 20 to the player1Damage global variable
-    var player2Damage = 20;                                     //this line declares and assigns the value of 20 to the player2Damage global variable
+    var player1Damage = playerOneName[1];                                    //this line declares and assigns the value of 20 to the player1Damage global variable
+    var player2Damage = playerTwoName[1];                                     //this line declares and assigns the value of 20 to the player2Damage global variable
 
     //player health                                          //Comment Line
     var playerOneHealth = 100;                                      //this line declares and assigns the value of 100 to the playerOneHealth global variable
