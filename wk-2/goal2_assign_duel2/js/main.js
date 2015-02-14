@@ -16,13 +16,17 @@
 
     console.log("FIGHT!!!");                            //This line displays fight on the browser console
 
-    var fighterOne = playerOneArray[0];
-    var fighterTwo = playerTwoArray [0];
+    //players arrays
+    var playerOneArray = ["Kabal",20,100];                        //This line creates an array called playerOneArray and creates an Index of three items
+    var playerTwoArray= ["Kratos",20,100];                          //This line creates an array called playerTwoArray and creates an Index of three items
 
 
-    //player name
-    var playerOneArray = ["Spiderman",20,100];                        //this line declares and assigns the value of Spiderman to the playerOneName global variable
-    var playerTwoArray= ["Batman",20,100];                           //this line declares and assigns the value of Batman to the playerTwoName global variable
+        //players names
+    var fighterOne = playerOneArray[0];                     //this line creates a variable called fightOne and assigns it the value of the 0 index in the playerOneArray
+    var fighterTwo = playerTwoArray [0];                   //this line creates a variable called fightTwo and assigns it the value of the 0 index in the playerTwoArray
+
+
+
 
     //player damage
     var player1Damage = playerOneArray[1];                                    //this line declares and assigns the value of 20 to the player1Damage global variable
