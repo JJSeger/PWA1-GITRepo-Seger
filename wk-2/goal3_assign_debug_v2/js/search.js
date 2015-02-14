@@ -1,3 +1,9 @@
+//Judd Seger
+// 02-13-15
+//Week #2 :: { Homework } - DEBUG Search
+
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
