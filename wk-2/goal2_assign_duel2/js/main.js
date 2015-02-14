@@ -25,14 +25,14 @@
     var player2Damage = playerTwoName[1];                                     //this line declares and assigns the value of 20 to the player2Damage global variable
 
     //player health                                          //Comment Line
-    var playerOneHealth = 100;                                      //this line declares and assigns the value of 100 to the playerOneHealth global variable
-    var playerTwoHealth = 100;                                      //this line declares and assigns the value of 100 to the playerTwoHealth global variable
+    var playerOneHealth = playerOneName[2];                                      //this line declares and assigns the value of 100 to the playerOneHealth global variable
+    var playerTwoHealth = playerTwoName[2];                                      //this line declares and assigns the value of 100 to the playerTwoHealth global variable
 
     //initiate round                                         //Comment Line
     var round=0;                                                //this line declares and assigns the value of 0 to the global variable round
 
     function fight(){                                               // This is the fight function
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);   //This line alerts the value of the global variable playerOneName,
+        alert(playerOneName [0]+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);   //This line alerts the value of the global variable playerOneName,
                                                                                                     //as well as a semi colon, the value of the global variable playerOneHealth
                                                                                                     //the words "*START*" , the value of the global variable playerTwoName, semicolon
                                                                                                     // and the value of the global variable playerTwoHealth
