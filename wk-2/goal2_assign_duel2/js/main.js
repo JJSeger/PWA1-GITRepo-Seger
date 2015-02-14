@@ -1,6 +1,6 @@
 //Judd Seger
-//02-07-15
-//Week #1 :: { Homework } - ANALYZE Duel #1
+//02-14-15
+//Week #2 :: { Homework } - ANALYZE Duel #2
 
 
 /**
