@@ -1,3 +1,12 @@
+//Judd Seger
+//Week #3 :: { Homework } - DEBUG Search v3
+//02-19-15
+
+
+
+
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
