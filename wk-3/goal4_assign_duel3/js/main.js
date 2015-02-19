@@ -1,15 +1,10 @@
 //Judd Seger
-//02-14-15
-//Week #2 :: { Homework } - ANALYZE Duel #2
+//02-19-15
+//Week #3 :: { Homework } - ANALYZE Duel #3
 
 
-/**
- * Duel Fight Game - FINISHED                             //Comment Line
- * Date: 4/09/13                                              //Comment Line
+//Duel Fight Game
 
- Assignment 1                                                 //Comment Line
- Part 1/3 of series                                               //Comment Line
- */
 
 // self-executing function                          //Comment Line
 (function(){                                            //This line names the function
