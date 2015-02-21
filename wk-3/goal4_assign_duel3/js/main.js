@@ -43,11 +43,14 @@
     fighter1_txt.innerHTML = fighters[0].name + ":     " + fighters[0].health;
     fighter2_txt.innerHTML = fighters[1].name + ":     " + fighters[1].health;
 
-    //FIGHT function
 
 
 
-    function fight() {                                               // This is the fight function
+
+
+//FIGHT function
+
+function fight() {                                               // This is the fight function
 
         fighter1_txt.innerHTML = fighters[0].name + ":     " + fighters [0].health;
         fighter2_txt.innerHTML = fighters[1].name + ":     " + fighters [1].health;
@@ -82,37 +85,50 @@
         else {
             fighter1_txt.innerHTML = result;
             fighter2_txt.innerHTML = "";
-            document.getElementById('.buttonblue').innerHTML = 'DONE!!';
+            document.getElementById(".buttonblue").innerHTML = 'DONE!!';
         }
         ;
 
+    fight();
+
+
+    winnerCheck();
+
+
+
+
+
+
+    function winnerCheck() {                                         //This is the function winnerCheck
+    var result = "no winner";                                     //This line assigns the value of "no winner" to the local variable result
+    if (fighters[0].health < 1 && fighters[1].health < 1)                 //nested if else statement that checks to see if the value of fighter[0].health
+    // and fighters[1].health are less than 1
+    {                                                           //curly brace
+        result = "You Both Die";                                // gives the value of "You both Die" to the variable result if the prior check comes back true
+    }
+    else if (fighters[0].health < 1) {                             //second part of the nested if else statement that checks to see if the value of playerOneHealth is less than 1
+        result = fighters[1].name + " WINS!!!";                        // assigns the value of fighterOne and the word "WINS" to the variable result if the prior check comes back true
+    }
+    else if (fighters[1].health < 1)                         //third part of the nested if else statement that checks to see if the value of playerTwoHealth is less than 1
+
+    {                                                           // curly brace
+        result = fighters[0].name + " WINS!!!";                       //assigns the value of fighters[1] and the word "WINS" to the local variable result if the prior check comes back true
+    }                                                          //curly brace and semicolon
+    return result;// returns the value of the local variable result
+
+
+     // Calls the fight function
+
+     //Calls th winnerCheck function
+
+});
 };
 
-);
 
 
-    function winnerCheck(){                                         //This is the function winnerCheck
-        var result="no winner";                                     //This line assigns the value of "no winner" to the local variable result
-        if (fighters[0].health <1 && fighters[1].health<1)                 //nested if else statement that checks to see if the value of fighter[0].health
-                                                                          // and fighters[1].health are less than 1
-        {                                                           //curly brace
-            result = "You Both Die";                                // gives the value of "You both Die" to the variable result if the prior check comes back true
-        }
-        else if(fighters[0].health<1){                             //second part of the nested if else statement that checks to see if the value of playerOneHealth is less than 1
-            result =fighters[1].name +" WINS!!!"                        // assigns the value of fighterOne and the word "WINS" to the variable result if the prior check comes back true
-        }
-        else if (fighters[1].health<1)                         //third part of the nested if else statement that checks to see if the value of playerTwoHealth is less than 1
-
-        {                                                           // curly brace
-            result = fighters[0].name +" WINS!!!"                       //assigns the value of fighters[1] and the word "WINS" to the local variable result if the prior check comes back true
-        }                                                          //curly brace and semicolon
-        return result;                                              // returns the value of the local variable result
-                                                                 //curly brace and semicolon
-    }
-})();
-    /*******  The program gets started below *******/                                    //Comment Line
-    //fight();                                    // Calls the fight function
 
 
-                                                         //Ends code
+
+
+
 
