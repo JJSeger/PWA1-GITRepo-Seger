@@ -37,19 +37,14 @@
     round_txt.innerhtml = "Click FIGHT BUTTON to Start!";
     fighter1_txt.innerHTML = fighters[0].name + ":     "+ fighters[0].health;
     fighter2_txt.innerHTML = fighters[1].name + ":     "+ fighters[1].health;
-    
+
 
 
 
 
 
     function fight(){                                               // This is the fight function
-        alert(fighterOne+":"+playerOneHealth +"  *START*  "+ fighterTwo+":"+ playerTwoHealth);   //This line alerts the value of the global variable fighterOne,
-                                                                                                    //as well as a semi colon, the value of the global variable playerOneHealth
-                                                                                                    //the words "*START*" , the value of the global variable fighterTwo, semicolon
-                                                                                                    // and the value of the global variable playerTwoHealth
-
-
+        //alert(fighterOne+":"+playerOneHealth +"  *START*  "+ fighterTwo+":"+ playerTwoHealth);   
 
 
 
