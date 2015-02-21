@@ -11,28 +11,37 @@
 
     console.log("FIGHT!!!");                            //This line displays fight on the browser console
 
+    //fighters defined
+    var fighter1_txt = document.getElementById("kr").getElementById("p");
+    var fighter2_txt = document.getElementById("ka").getElementById("p");
+
+    var round_txt = document.getElementById("h5");
+    var button = document.getElementById("fight_btn");
+
+    //Click Event
+    button.addEventListener("click", fight, false);
+
+
+
+
+
     //players arrays
-    var playerOneArray = ["Kabal",20,100];                        //This line creates an array called playerOneArray and creates an Index of three items
-    var playerTwoArray= ["Kratos",20,100];                          //This line creates an array called playerTwoArray and creates an Index of three items
+    var fighters = [{name: "Kabal", damage : 20, health : 100},
+        {name: "Kabal", damage: 20, health: 100}];
 
 
-        //players names
-    var fighterOne = playerOneArray[0];                     //this line creates a variable called fightOne and assigns it the value of the 0 index in the playerOneArray
-    var fighterTwo = playerTwoArray [0];                   //this line creates a variable called fightTwo and assigns it the value of the 0 index in the playerTwoArray
+            //initializing round
+        var round = 1;
+
+        // initialing DOM innerHTML text for top of HTML page
+    round_txt.innerhtml = "Click FIGHT BUTTON to Start!";
+    fighter1_txt.innerHTML = fighters[0].name + ":     "+ fighters[0].health;
+    fighter2_txt.innerHTML = fighters[1].name + ":     "+ fighters[1].health;
+    
 
 
 
 
-    //player damage
-    var player1Damage = playerOneArray[1];                                    //this line declares and assigns the value of 20 to the player1Damage global variable
-    var player2Damage = playerTwoArray[1];                                     //this line declares and assigns the value of 20 to the player2Damage global variable
-
-    //player health                                          //Comment Line
-    var playerOneHealth = playerOneArray[2];                                      //this line declares and assigns the value of 100 to the playerOneHealth global variable
-    var playerTwoHealth = playerTwoArray[2];                                      //this line declares and assigns the value of 100 to the playerTwoHealth global variable
-
-    //initiate round                                         //Comment Line
-    var round=0;                                                //this line declares and assigns the value of 0 to the global variable round
 
     function fight(){                                               // This is the fight function
         alert(fighterOne+":"+playerOneHealth +"  *START*  "+ fighterTwo+":"+ playerTwoHealth);   //This line alerts the value of the global variable fighterOne,
